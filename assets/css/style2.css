@@ -1,0 +1,25 @@
+/* 
+    color: #028090;
+    color: #00a896;
+    color: #fcb045;   */
+
+.logoa{
+    width: 20%;
+    border: 1px solid #ddd;
+    padding: 3px;
+    border-radius: 50%;
+}
+.iconh>img{
+    width: 80%;
+    border: 1px solid #ddd;
+    padding: 3px;
+    border-radius: 50%;
+}
+.iconh2>img{
+    width: 70%;
+    border: 1px solid #ddd;
+    padding: 3px;
+    border-radius: 50%;
+}
+
+
