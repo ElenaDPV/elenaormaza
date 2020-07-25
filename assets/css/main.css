@@ -303,9 +303,6 @@ background: linear-gradient(90deg, rgba(2,128,144,1) 0%, rgba(0,168,150,1) 46%, 
 		color: #ffffff;
 	}
 
-	a:hover {
-		color: #ffffff;
-	}
 
 	strong, b {
 		color: #ffffff;
@@ -3542,11 +3539,14 @@ background: linear-gradient(90deg, rgba(2,128,144,1) 0%, rgba(0,168,150,1) 46%, 
 		}
 
 		#main header.major h2:after {
-			background-color: #dddddd;
-			background-image: -moz-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-			background-image: -webkit-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-			background-image: -ms-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-			background-image: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+			background: rgba(2,128,144,1);
+background: -moz-linear-gradient(left, rgba(2,128,144,1) 0%, rgba(2,128,144,1) 0%, rgba(2,128,144,1) 0%, rgba(2,128,144,1) 16%, rgba(0,168,150,1) 45%, rgba(252,176,69,1) 95%, rgba(252,176,69,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(2,128,144,1)), color-stop(0%, rgba(2,128,144,1)), color-stop(0%, rgba(2,128,144,1)), color-stop(16%, rgba(2,128,144,1)), color-stop(45%, rgba(0,168,150,1)), color-stop(95%, rgba(252,176,69,1)), color-stop(100%, rgba(252,176,69,1)));
+background: -webkit-linear-gradient(left, rgba(2,128,144,1) 0%, rgba(2,128,144,1) 0%, rgba(2,128,144,1) 0%, rgba(2,128,144,1) 16%, rgba(0,168,150,1) 45%, rgba(252,176,69,1) 95%, rgba(252,176,69,1) 100%);
+background: -o-linear-gradient(left, rgba(2,128,144,1) 0%, rgba(2,128,144,1) 0%, rgba(2,128,144,1) 0%, rgba(2,128,144,1) 16%, rgba(0,168,150,1) 45%, rgba(252,176,69,1) 95%, rgba(252,176,69,1) 100%);
+background: -ms-linear-gradient(left, rgba(2,128,144,1) 0%, rgba(2,128,144,1) 0%, rgba(2,128,144,1) 0%, rgba(2,128,144,1) 16%, rgba(0,168,150,1) 45%, rgba(252,176,69,1) 95%, rgba(252,176,69,1) 100%);
+background: linear-gradient(to right, rgba(2,128,144,1) 0%, rgba(2,128,144,1) 0%, rgba(2,128,144,1) 0%, rgba(2,128,144,1) 16%, rgba(0,168,150,1) 45%, rgba(252,176,69,1) 95%, rgba(252,176,69,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#028090', endColorstr='#fcb045', GradientType=1 );
 		}
 
 		#main table tbody tr {

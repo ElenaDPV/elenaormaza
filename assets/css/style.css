@@ -1,0 +1,89 @@
+/* 
+    color: #028090;
+    color: #00a896;
+    color: #fcb045;
+    #1c3835   */
+
+/* ESTILOS GENERALES */
+a{
+  color: #1c3835 !important;  
+}
+a:hover{
+    color: #fcb045 !important;  
+}
+body{
+    font-family: 'Montserrat', sans-serif !important;
+}
+.color1{
+    color: #1c3835 !important;  
+}
+.polPriv{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.footerClas{
+   
+    display: flex;
+    justify-content: center;
+}
+.noSub{
+    border: none;
+}
+.enmailTex{
+    color: #FFFFFF;
+    font-size: 1em;
+}
+.weiFontBold{
+    font-weight: 600;
+}
+.imgTitulo{
+    height: 50% !important;
+}
+
+/* FIN ESTILOS GENERALES */
+
+.logoa{
+    width: 20%;
+    border: 1px solid #ddd;
+    padding: 3px;
+    border-radius: 50%;
+}
+
+.iconh>img{
+    width: 80%;
+    border: 1px solid #ddd;
+    padding: 3px;
+    border-radius: 50%;
+}
+.iconh2>img{
+    width: 70%;
+    border: 1px solid #ddd;
+    padding: 3px;
+    border-radius: 50%;
+}
+.listafoot{
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+}
+.listafoot>li{
+    margin-right: 2em;
+}
+
+.iconh3>i{
+    font-size: 50px;
+   
+}
+.commons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* pagina del currículum */
+
+
+
+
+
+
