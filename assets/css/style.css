@@ -52,6 +52,33 @@ body{
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#028090', endColorstr='#fcb045', GradientType=1 );
             
 }
+.desatitu:hover{
+    transform:scale(1.50);
+    -webkit-transform:scale(1.50);
+    -moz-transform:scale(1.50);
+    -ms-transform:scale(1.50);
+    -o-transform:scale(1.50);
+}
+.logo2img:hover{
+    transform: rotate(50deg);
+    filter: saturate(180%);
+    -webkit-filter: saturate(180%);
+    -webkit-transform: rotate(50deg);
+    -moz-transform: rotate(50deg);
+    -ms-transform: rotate(50deg);
+    -o-transform: rotate(50deg);
+}
+.iconh>img:hover{
+    filter: saturate(10%);
+    -webkit-filter: saturate(10%);
+}
+.iconh2>img:hover{
+    filter: saturate(10%);
+    -webkit-filter: saturate(10%);
+}
+.fa-tags:hover{
+    color: #fcb045;
+}
 
 /* FIN ESTILOS GENERALES */
 
@@ -104,31 +131,39 @@ body{
     text-align: right;
 }
 @media (min-width: 0px) and (max-width: 431px){ 
-.colsums{
-    flex-direction: column;
+    .colsums{
+        flex-direction: column;
+        
+    }
+    .derecha1{
+        text-align: center !important;
+    }
+    .polPriv{
+        text-align: center;
+    }
+    .commons{
+        margin: auto;
+        text-align: center;
+    }
+    .contacTo{
+        text-align: center;
+        margin-top: 3em;
+    }
+    .iconh>img{
+        width: 50%;
+    }
+    .iconh3>i{
+        font-size: 30px;
     
-}
-.derecha1{
-    text-align: center !important;
-}
-.polPriv{
-    text-align: center;
-}
-.commons{
-    margin: auto;
-    text-align: center;
-}
-.contacTo{
-    text-align: center;
-}
-.iconh3>i{
-    font-size: 30px;
-   
-}
-.iconh2>img{
-    width: 20%;
-    
-}
+    }
+    .iconh2>img{
+        width: 20%;
+        
+    }
+    .listafoot>li{
+        margin: auto;
+        text-align: center;
+    }
 
 }
 
