@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /cookies/
+
+Sitemap: https://elena-frontend.com/sitemap.xml
