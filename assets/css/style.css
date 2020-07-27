@@ -92,6 +92,14 @@ body{
     justify-content: center;
     align-items: center;
 }
+.fa-tags{
+    font-size: 10em;
+    color: #429C95;
+}
+.alfinal{
+    display: flex;
+    justify-content: flex-end;
+}
 
 /* pagina del currículum */
 
