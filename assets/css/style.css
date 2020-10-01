@@ -227,6 +227,9 @@ body{
         flex-direction: column;
         
     }
+    .color1{
+        flex-direction: column;
+    }
     .derecha1{
         text-align: center !important;
     }
@@ -256,8 +259,23 @@ body{
         margin: auto;
         text-align: center;
     }
+    .habilidades{
+        
+        background-size: 250%;
+        background-position: center;
+       
+    }
+    .desatitu:hover{
+        transform:scale(1.00);
+        -webkit-transform:scale(1.00);
+        -moz-transform:scale(1.00);
+        -ms-transform:scale(1.00);
+        -o-transform:scale(1.00);
+    }
+    
 
 }
+/* --------------- FIN RESPONSIVE----------------- */
 
 
 
