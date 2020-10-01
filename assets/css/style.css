@@ -1,21 +1,49 @@
-/* 
-    color: #028090;
-    color: #00a896;
-    color: #fcb045;
-    #1c3835   */
+
 
 /* ESTILOS GENERALES */
+:root{
+    --primerColor: #028090;
+    --segundoColor: #00a896;
+    --tercerColor: #fcb045;
+    --enlaceColor: #1c3835;
+    --cuartoColor: #FFFFFF;
+    --quintoColor: #ddd;
+}
+.degrad{
+    background: rgba(2,128,144,1);
+    background: -moz-linear-gradient(left, rgba(2,128,144,1) 0%, rgba(2,128,144,1) 0%, rgba(2,128,144,1) 0%, rgba(2,128,144,1) 16%, rgba(0,168,150,1) 45%, rgba(252,176,69,1) 95%, rgba(252,176,69,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(2,128,144,1)), color-stop(0%, rgba(2,128,144,1)), color-stop(0%, rgba(2,128,144,1)), color-stop(16%, rgba(2,128,144,1)), color-stop(45%, rgba(0,168,150,1)), color-stop(95%, rgba(252,176,69,1)), color-stop(100%, rgba(252,176,69,1)));
+    background: -webkit-linear-gradient(left, rgba(2,128,144,1) 0%, rgba(2,128,144,1) 0%, rgba(2,128,144,1) 0%, rgba(2,128,144,1) 16%, rgba(0,168,150,1) 45%, rgba(252,176,69,1) 95%, rgba(252,176,69,1) 100%);
+    background: -o-linear-gradient(left, rgba(2,128,144,1) 0%, rgba(2,128,144,1) 0%, rgba(2,128,144,1) 0%, rgba(2,128,144,1) 16%, rgba(0,168,150,1) 45%, rgba(252,176,69,1) 95%, rgba(252,176,69,1) 100%);
+    background: -ms-linear-gradient(left, rgba(2,128,144,1) 0%, rgba(2,128,144,1) 0%, rgba(2,128,144,1) 0%, rgba(2,128,144,1) 16%, rgba(0,168,150,1) 45%, rgba(252,176,69,1) 95%, rgba(252,176,69,1) 100%);
+    background: linear-gradient(to right, rgba(2,128,144,1) 0%, rgba(2,128,144,1) 0%, rgba(2,128,144,1) 0%, rgba(2,128,144,1) 16%, rgba(0,168,150,1) 45%, rgba(252,176,69,1) 95%, rgba(252,176,69,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#028090', endColorstr='#fcb045', GradientType=1 );       
+}
+
+    .mySwitch .check::after {
+        background: var(--primerColor)!important;
+        border-color: var(--primerColor)!important;
+    }
+    .mySwitch input[type="checkbox"]:checked ~ .check {
+        background: var(--primerColor)!important;
+        border-color: var(--quintoColor)!important;
+    }
+    .mySwitch input[type="checkbox"]:checked ~ .check::after {
+        border-color: #ffffff!important;
+        background: #ffffff!important;
+    }
+
 a{
-  color: #1c3835 !important;  
+  color: var(--enlaceColor) !important;  
 }
 a:hover{
-    color: #fcb045 !important;  
+    color: var(--tercerColor) !important;  
 }
 body{
     font-family: 'Montserrat', sans-serif !important;
 }
 .color1{
-    color: #1c3835 !important;  
+    color: var(--enlaceColor) !important;  
 }
 .polPriv{
     margin: 0 !important;
@@ -30,7 +58,7 @@ body{
     border: none;
 }
 .enmailTex{
-    color: #FFFFFF;
+    color: var(--cuartoColor);
     font-size: 1em;
 }
 .weiFontBold{
@@ -77,27 +105,89 @@ body{
     -webkit-filter: saturate(10%);
 }
 .fa-tags:hover{
-    color: #fcb045;
+    color: var(--tercerColor);
+}
+.leerMas{
+    background-color: var(--enlaceColor);
+    
+}
+/* barra animadas progres bars */
+.progrBars{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nombreBarras{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: end;
+    font-size: 0.8em;
+    
+}
+.barraT{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.letrasBa{
+    width: 8em;
+    text-align: end;
+}
+.barras {
+    
+    width:320px; 
+    margin:10px auto;
+  }
+  .barra {
+    width:300px; 
+    height:30px; 
+    background:#CCC; 
+    margin:10px;
+  }
+  .barra-nivel {
+    height:30px; 
+    background:#444;
+    width:1px;
+    -webkit-transition: width 1s ease;
+    -moz-transition: width 1s ease;
+    transition: width 1s ease;
+  }
+  .valor-nivel {
+    line-height:30px; 
+    color:#fff; 
+    margin-left:10px; 
+    font-family:"Montserrat"; 
+    font-size:12px;
+  }
+  .habilidades{
+      background-image: url("/images/fondoHabi2.png");
+      background-repeat: no-repeat;
+      background-size: 150%;
+      background-position: center;
+     
+  }
 /* FIN ESTILOS GENERALES */
 
 .logoa{
     width: 20%;
-    border: 1px solid #ddd;
+    border: 1px solid var(--quintoColor);
     padding: 3px;
     border-radius: 50%;
 }
 
 .iconh>img{
     width: 80%;
-    border: 1px solid #ddd;
+    border: 1px solid var(--quintoColor);
     padding: 3px;
     border-radius: 50%;
 }
 .iconh2>img{
     width: 70%;
-    border: 1px solid #ddd;
+    border: 1px solid var(--quintoColor);
     padding: 3px;
     border-radius: 50%;
 }
@@ -121,7 +211,7 @@ body{
 }
 .fa-tags{
     font-size: 10em;
-    color: #429C95;
+    color: var(--segundoColor);
 }
 .alfinal{
     display: flex;
@@ -130,6 +220,8 @@ body{
 .derecha1{
     text-align: right;
 }
+
+/* ---------------RESPONSIVE----------------- */
 @media (min-width: 0px) and (max-width: 431px){ 
     .colsums{
         flex-direction: column;
@@ -168,7 +260,7 @@ body{
 }
 
 
-/* pagina del currículum */
+
 
 
 
