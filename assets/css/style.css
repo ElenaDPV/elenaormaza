@@ -247,8 +247,16 @@ body{
         flex-direction: column;
         
     }
+    .barrasAnim{
+        margin-left: 0em;
+        width: 90%;
+        margin-bottom: 3em;
+    }
     .color1{
         flex-direction: column;
+    }
+    .modoDark{
+        margin-top: -1em;
     }
     .derecha1{
         text-align: center !important;
