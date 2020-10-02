@@ -23,6 +23,7 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#028090', endColorstr='#fcb045', GradientType=1 );       
 }
 
+
 .mySwitch .check::after {
     background: var(--primerColor)!important;
     border-color: var(--primerColor)!important;
@@ -83,13 +84,13 @@ body{
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#028090', endColorstr='#fcb045', GradientType=1 );
             
 }
-.desatitu:hover{
+/* .desatitu:hover{
     transform:scale(1.50);
     -webkit-transform:scale(1.50);
     -moz-transform:scale(1.50);
     -ms-transform:scale(1.50);
     -o-transform:scale(1.50);
-}
+} */
 .logo2img:hover{
     transform: rotate(50deg);
     filter: saturate(180%);
@@ -115,53 +116,11 @@ body{
     
 }
 /* barra animadas progres bars */
-.progrBars{
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.nombreBarras{
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    text-align: end;
-    font-size: 0.8em;
-    
-}
-.barraT{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.barrasAnim{
+    margin-left: -5em;
 }
 
-.letrasBa{
-    width: 8em;
-    text-align: end;
-}
-.barras {
-    
-    width:320px; 
-    margin:10px auto;
-  }
-  .barra {
-    width:300px; 
-    height:30px; 
-    background:#CCC; 
-    margin:10px;
-  }
-  .barra-nivel {
-    height:30px;
-    background:#444;
-    width:1px;
-    transition: width  3 ease;
-    transition-timing-function: linear;
-    -webkit-transition: width  3 ease;
-    -moz-transition: width  3 ease;
-    -ms-transition: width  3 ease;
-    -o-transition: width  3 ease;
-}
 .padBarras{
     
     justify-content: center;
@@ -175,9 +134,12 @@ body{
 .grisclaR{
     z-index: 2;
     background-color: #F3F9F9;
+    border-right: 3px solid white;
 }
 .borderSolo{
     background-color: #FEFAF5;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
     width: 100%;
     margin: auto;
 }
@@ -185,14 +147,16 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 4em;
+    width: 2em;
     height: 2em;
+    border-right: 3px solid white;
     background: #dbebee;
     transition: width 2s;
     -webkit-transition: width 2s;
     -moz-transition: width 2s;
     -ms-transition: width 2s;
     -o-transition: width 2s;
+    border-radius: 4px;
 }
 .animacionLg:hover{
     width: 100%;
@@ -218,15 +182,6 @@ body{
   .ani6{
     width: 55%;
   }
-
-
-
-  .valor-nivel {
-    line-height:30px; 
-    color:#fff; 
-    margin-left:10px; 
-    font-size:12px;
-  }
   .habilidades{
       background-image: url("/images/fondoHabi2.png");
       background-repeat: no-repeat;
@@ -234,9 +189,6 @@ body{
       background-position: center;
      
   }
-
-
-  
 
 /* FIN ESTILOS GENERALES */
 
@@ -333,14 +285,14 @@ body{
         background-position: center;
        
     }
-    .desatitu:hover{
+    /* .desatitu:hover{
         transform:scale(1.00);
         -webkit-transform:scale(1.00);
         -moz-transform:scale(1.00);
         -ms-transform:scale(1.00);
         -o-transform:scale(1.00);
     }
-    
+     */
 
 }
 /* --------------- FIN RESPONSIVE----------------- */
