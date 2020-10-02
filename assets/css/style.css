@@ -8,6 +8,9 @@
     --enlaceColor: #1c3835;
     --cuartoColor: #FFFFFF;
     --quintoColor: #ddd;
+    --letrasColor:#636363;
+    --grisOscuro: #444444;
+    --grisClaro: #CCCCCC;
 }
 .degrad{
     background: rgba(2,128,144,1);
@@ -20,18 +23,18 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#028090', endColorstr='#fcb045', GradientType=1 );       
 }
 
-    .mySwitch .check::after {
-        background: var(--primerColor)!important;
-        border-color: var(--primerColor)!important;
-    }
-    .mySwitch input[type="checkbox"]:checked ~ .check {
-        background: var(--primerColor)!important;
-        border-color: var(--quintoColor)!important;
-    }
-    .mySwitch input[type="checkbox"]:checked ~ .check::after {
-        border-color: #ffffff!important;
-        background: #ffffff!important;
-    }
+.mySwitch .check::after {
+    background: var(--primerColor)!important;
+    border-color: var(--primerColor)!important;
+}
+.mySwitch input[type="checkbox"]:checked ~ .check {
+    background: var(--primerColor)!important;
+    border-color: var(--quintoColor)!important;
+}
+.mySwitch input[type="checkbox"]:checked ~ .check::after {
+    border-color: #ffffff!important;
+    background: #ffffff!important;
+}
 
 a{
   color: var(--enlaceColor) !important;  
@@ -149,18 +152,79 @@ body{
     margin:10px;
   }
   .barra-nivel {
-    height:30px; 
+    height:30px;
     background:#444;
     width:1px;
-    -webkit-transition: width 1s ease;
-    -moz-transition: width 1s ease;
-    transition: width 1s ease;
+    transition: width  3 ease;
+    transition-timing-function: linear;
+    -webkit-transition: width  3 ease;
+    -moz-transition: width  3 ease;
+    -ms-transition: width  3 ease;
+    -o-transition: width  3 ease;
+}
+.padBarras{
+    
+    justify-content: center;
+    align-items: center;
+}
+.letrAumen{
+    text-align: end;
+    width: 10em;
+    
+}
+.grisclaR{
+    z-index: 2;
+    background-color: #F3F9F9;
+}
+.borderSolo{
+    background-color: #FEFAF5;
+    width: 100%;
+    margin: auto;
+}
+.animacionLg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4em;
+    height: 2em;
+    background: #dbebee;
+    transition: width 2s;
+    -webkit-transition: width 2s;
+    -moz-transition: width 2s;
+    -ms-transition: width 2s;
+    -o-transition: width 2s;
+}
+.animacionLg:hover{
+    width: 100%;
+}
+.animacionLg>p {
+    margin-bottom: 0;
+}
+  .ani1{
+    width: 80%;
   }
+  .ani2{
+    width: 78%;
+  }
+  .ani3{
+    width: 50%;
+  }
+  .ani4{
+    width: 42%;
+  }
+  .ani5{
+    width: 70%;
+  }
+  .ani6{
+    width: 55%;
+  }
+
+
+
   .valor-nivel {
     line-height:30px; 
     color:#fff; 
     margin-left:10px; 
-    font-family:"Montserrat"; 
     font-size:12px;
   }
   .habilidades{
@@ -170,6 +234,10 @@ body{
       background-position: center;
      
   }
+
+
+  
+
 /* FIN ESTILOS GENERALES */
 
 .logoa{
